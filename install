@@ -408,7 +408,7 @@ install_pkg() {
 }
 
 install_extra() {
-    local packages=(apt-transport-https ca-certificates curl gnupg2 net-tools software-properties-common tzdata ucspi-tcp zip python)
+    local packages=(apt-transport-https ca-certificates curl gnupg2 net-tools software-properties-common tzdata ucspi-tcp zip )
     for package in "${packages[@]}"; do
         install_pkg "$package"
     done
